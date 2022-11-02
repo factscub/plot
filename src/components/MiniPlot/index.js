@@ -27,8 +27,6 @@ export const MiniPlot = ({ data,color }) => {
                 style: {
                     background: "transparent",
                     color
-                    
-
                 },
             })
         }
@@ -39,7 +37,7 @@ export const MiniPlot = ({ data,color }) => {
         miniPlotRef.current.appendChild(plot);
 
         return () => {
-            if (miniPlotRef.current) miniPlotRef.current.removeChild(plot)
+           miniPlotRef.current.removeChild(plot)
         }
 
     }, [data, miniPlotRef,color]);

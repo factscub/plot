@@ -17,11 +17,8 @@ export const USPlot = () => {
     return (
         <>
             <Header isOpen={isOpen} setIsOpen={setIsOpen} />
-            <PlotContainer index={index} selectedCity={selectedCity} isOpen={isOpen} cityData={cityData} />
-
-            {
-                <SideBar setIndex={setIndex} setSelectedCity={setSelectedCity} isOpen={isOpen} cityData={cityData} />
-            }
+            <PlotContainer {...{ index, selectedCity, isOpen, cityData }} />
+            <SideBar {...{ setIndex, setSelectedCity, isOpen, cityData }} />
         </>
     )
 }

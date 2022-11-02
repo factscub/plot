@@ -5,7 +5,7 @@ import { SideBarWrapper, ScrollBar } from './styles'
 export const SideBar = ({setSelectedCity,setIndex, isOpen, cityData }) => {
     return (
         <SideBarWrapper
-            transition={{stiffness:50, type:'spring'}}
+            transition={{type:'tween'}}
             initial={{ x: -300, opacity: 0 }}
             animate={{ x: isOpen ? 0 : -300, opacity: 1 }}>
          

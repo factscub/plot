@@ -38,13 +38,13 @@ export const PlotContainer = ({ index, selectedCity, isOpen, cityData }) => {
 
     plotRef.current.append(plot)
     return () => plotRef.current.removeChild(plot)
-  }, [cityData, data])
+  }, [cityData, data,index])
 
   return (
     <PlotWrapper
       ref={dimensions}
       animate={{ x: isOpen ? 240 : 0 }}
-      transition={{ stiffness: 50, type: 'spring' }}>
+      transition={{type:'tween'}}>
       <p>US Temperatures</p>
       <div ref={plotRef}></div>
     </PlotWrapper>

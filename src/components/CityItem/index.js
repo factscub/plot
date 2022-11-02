@@ -19,7 +19,7 @@ export const CityItem = ({ setIndex, setSelectedCity, index, city, data }) => {
     if (index === 0) {
       inputRef.current.setAttribute('checked', 'checked')
     }
-  }, [])
+  }, [index])
   return (
 
     <CityItemWrapper style={{ background: isChecked ? dark : light, borderRadius: '10px' }}>
