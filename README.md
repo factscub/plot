@@ -1,10 +1,5 @@
 # Getting Started with Create React App
 
-
-## Deployed Version
-
-Open [https://customersdata.netlify.app](https://customersdata.netlify.app) to view it in your browser.
-
 ## Available Scripts
 
 In the project directory, you can run:
